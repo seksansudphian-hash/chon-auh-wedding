@@ -482,6 +482,16 @@ input, select {
     </div>
   </section>
 
+  <!-- 9b · Gift (PromptPay) -->
+  <section class="gift">
+    <h2 class="script">With love &amp; blessings</h2>
+    <p class="lead">สำหรับท่านที่ไม่สะดวกมาร่วมงาน แต่อยากร่วมแสดงความยินดีกับเรา สแกน QR ด้านล่างได้เลย</p>
+    <div class="qr-card"><img src="photos/promptpay.jpg" alt="QR พร้อมเพย์ ธนาคารกรุงศรี ชื่อบัญชี นายเสกสรรค์ สุดเพียร" loading="lazy"></div>
+    <p class="muted" style="font-size:13px;margin-top:14px">กดค้างที่รูปเพื่อบันทึก แล้วเปิดแอปธนาคารเพื่อสแกนจากรูปได้</p>
+    <div class="center" style="margin-top:4px"><button class="btn line" type="button" id="copy-pp">คัดลอกเลขพร้อมเพย์</button></div>
+    <p style="margin-top:22px">ขอบคุณสำหรับทุกความรักและคำอวยพร</p>
+  </section>
+
   <!-- 10 · Farewell -->
   <section class="farewell">
     <p class="caps">With love</p>
@@ -561,6 +571,13 @@ input, select {
     $("cd-m").textContent = pad(Math.floor(s % 3600 / 60)); $("cd-s").textContent = pad(s % 60);
   }
   tick(); setInterval(tick, 1000);
+
+  // Copy PromptPay number
+  $("copy-pp").addEventListener("click", () => {
+    const b = $("copy-pp"), num = "0995036204";
+    navigator.clipboard.writeText(num).then(() => { b.textContent = "คัดลอกแล้ว 099-503-6204"; })
+      .catch(() => { b.textContent = "เลขพร้อมเพย์ 099-503-6204"; });
+  });
 
   // Gallery lightbox
   const lb = $("lb"), lbImg = $("lb-img");
