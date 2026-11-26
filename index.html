@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>การ์ดวิวาห์ ชล &amp; อัช</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="ขอเรียนเชิญร่วมงานมงคลสมรส ชล &amp; อัช · วันพฤหัสบดีที่ 14 มกราคม 2570 · Chaan de Cafe &amp; Wedding ปทุมธานี">
+<meta property="og:type" content="website">
+<meta property="og:title" content="การ์ดวิวาห์ ชล &amp; อัช">
+<meta property="og:description" content="วันพฤหัสบดีที่ 14 มกราคม 2570 · Chaan de Cafe &amp; Wedding ปทุมธานี · แตะเพื่อเปิดการ์ดเชิญ">
+<meta property="og:image" content="https://seksansudphian-hash.github.io/chon-auh-wedding/photos/og.jpg">
+<meta property="og:url" content="https://seksansudphian-hash.github.io/chon-auh-wedding/">
+<meta name="twitter:card" content="summary_large_image">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.5 system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Charmonman:wght@400;700&family=Noto+Serif+Thai:wght@300;400;600&display=swap">
+<style>
+/* Layout: a single ivory paper column (max 520px, like a phone-held letter) that opens from a sealed envelope, then unfolds section by section: save-the-date, countdown at sunset, portrait, our story, timeline, dress code, gallery, RSVP, farewell. */
+:root {
+  --paper: #f2f6f7;
+  --paper-2: #e2ebee;
+  --linen: #cfdbe0;
+  --ink: #4a2f22;
+  --ink-soft: #6b767c;
+  --champagne: #8fb3cc;
+  --mint: #6fbf9f;
+  --seal: #5e3d2d;
+  --night: #1f2633;
+  --f-script: "Pinyon Script", "Charmonman", cursive;
+  --f-thai-script: "Charmonman", "Noto Serif Thai", cursive;
+  --f-serif: "Bodoni Moda", "Times New Roman", serif;
+  --f-body: "Noto Serif Thai", "Bodoni Moda", serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--linen);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 16px; line-height: 1.75; font-weight: 300;
+  overflow-x: hidden;
+}
+img { display: block; max-width: 100%; }
+
+.letter {
+  position: relative; max-width: 520px; margin: 0 auto;
+  background-color: var(--paper);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cg fill='none' stroke='%239fbfcf' stroke-opacity='.22' stroke-width='1'%3E%3Cpath d='M40 60c10-24 40-24 44 0-14 6-30 8-44 0zM40 60c-6 16 4 34 22 34'/%3E%3Ccircle cx='62' cy='58' r='5'/%3E%3Cpath d='M150 160c12-22 42-18 42 6-14 4-30 4-42-6zM150 160c-8 14 0 32 18 36M120 20c6 10 18 12 26 4M10 180c14-4 24 4 26 18'/%3E%3Ccircle cx='172' cy='162' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  box-shadow: 0 0 80px rgba(40,60,70,.18);
+  overflow: hidden;
+}
+section { padding-block: 72px; padding-left: max(24px, env(safe-area-inset-left, 0px)); padding-right: max(24px, env(safe-area-inset-right, 0px)); text-align: center; position: relative; }
+
+.script { font-family: var(--f-script); font-weight: 400; line-height: 1; color: var(--ink); }
+.caps { font-family: var(--f-serif); text-transform: uppercase; letter-spacing: .28em; font-size: 11px; color: var(--ink-soft); }
+.serif { font-family: var(--f-serif); }
+h2 { margin: 0; font-weight: 400; text-wrap: balance; }
+p { margin: 0; }
+.muted { color: var(--ink-soft); }
+
+/* ---------- 1. Envelope ---------- */
+.intro {
+  position: fixed; inset: 0; z-index: 60; overflow-y: auto;
+  display: grid; place-items: center; align-content: center; gap: 28px;
+  padding-top: calc(env(safe-area-inset-top, 0px) + 40px);
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 40px);
+  transition: opacity 1s ease, visibility 0s linear 1s, transform 1s ease;
+  background: radial-gradient(120% 80% at 50% 30%, #f8fbfc 0%, var(--paper-2) 70%);
+}
+.intro .script { font-size: 44px; }
+.env-wrap { perspective: 1200px; width: min(340px, 88vw); }
+.envelope {
+  position: relative; width: 100%; aspect-ratio: 1.45; max-width: 100%;
+  cursor: pointer; border: 0; padding: 0; background: none;
+  filter: drop-shadow(0 22px 30px rgba(30,50,60,.22));
+}
+.envelope:focus-visible { outline: 2px solid var(--champagne); outline-offset: 8px; border-radius: 4px; }
+.env-back, .env-front, .env-flap { position: absolute; inset: 0; }
+.env-back { background: #dde7ec; border-radius: 4px; }
+.card-in {
+  position: absolute; left: 7%; right: 7%; top: 8%; height: 86%;
+  background: #fbfdfd; border: 1px solid #cfdde3; border-radius: 2px;
+  display: grid; place-items: center; align-content: center; gap: 4px; padding: 10px;
+  transition: transform 1.1s cubic-bezier(.3,.7,.2,1) .55s;
+  z-index: 1;
+}
+.card-in .script { font-size: 34px; }
+.env-front {
+  z-index: 2; border-radius: 4px;
+  background:
+    linear-gradient(to top right, #e9f0f2 50%, transparent 50.3%) left / 50.2% 100% no-repeat,
+    linear-gradient(to top left, #e4ecef 50%, transparent 50.3%) right / 50.2% 100% no-repeat,
+    linear-gradient(to top, #edf3f5 0 46%, transparent 46%),
+    #dbe5ea;
+}
+.envelope:not(.open) .card-in { visibility: hidden; }
+.intro.gone { opacity: 0; visibility: hidden; transform: scale(1.04); pointer-events: none; }
+body.locked { overflow: hidden; }
+
+/* Music toggle */
+.music {
+  position: fixed; z-index: 45;
+  right: calc(16px + env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  width: 48px; height: 48px; border-radius: 50%; cursor: pointer;
+  border: 1px solid var(--champagne); background: rgba(251,253,253,.92); color: var(--ink);
+  display: grid; place-items: center; box-shadow: 0 6px 18px rgba(40,60,70,.2);
+}
+.music svg { width: 20px; height: 20px; }
+.music.playing svg { animation: spin 6s linear infinite; }
+.music:focus-visible { outline: 2px solid var(--champagne); outline-offset: 3px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.env-front::after { /* lace edge along the bottom triangle */
+  content: ""; position: absolute; inset: auto 0 0 0; height: 10px;
+  background: radial-gradient(circle at 6px 0, transparent 4px, #ffffff 4.5px) 0 0 / 12px 10px repeat-x;
+  opacity: .9;
+}
+.env-flap {
+  z-index: 3; transform-origin: top center; transition: transform .8s cubic-bezier(.5,0,.3,1), z-index 0s .4s;
+  clip-path: polygon(0 0, 100% 0, 50% 62%);
+  background: linear-gradient(180deg, #dfe9ed, #d3e0e6);
+}
+.env-flap::after {
+  content: ""; position: absolute; inset: 0;
+  clip-path: polygon(0 0, 100% 0, 50% 62%);
+  background: radial-gradient(circle at 7px 7px, rgba(255,255,255,.75) 2px, transparent 2.5px) 0 0 / 14px 14px;
+  -webkit-mask: linear-gradient(180deg, transparent 0 0, #000 0) ; opacity: .35;
+}
+.seal {
+  position: absolute; z-index: 4; left: 50%; top: 62%; width: 64px; height: 64px; transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #8a6450, var(--seal) 55%, #3e261b);
+  box-shadow: 0 3px 8px rgba(40,25,15,.35), inset 0 -3px 6px rgba(0,0,0,.2), inset 0 2px 3px rgba(255,255,255,.35);
+  display: grid; place-items: center;
+  font-family: var(--f-script); font-size: 26px; color: #e6f4ef; text-shadow: 0 1px 1px rgba(0,0,0,.35);
+  transition: opacity .35s, transform .5s;
+}
+.seal::before { content: ""; position: absolute; inset: 6px; border-radius: 50%; border: 1px dashed rgba(230,244,239,.55); }
+.envelope.open .seal { opacity: 0; transform: translate(-50%, -50%) scale(.6); }
+.envelope.open .env-flap { transform: rotateX(180deg); z-index: 0; }
+.envelope.open .card-in { transform: translateY(-58%); z-index: 3; transition-delay: .55s, 0s; }
+.tap { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.tap .hint { font-size: 14px; color: var(--ink-soft); }
+.tap .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--mint); animation: pulse 1.8s infinite; }
+@keyframes pulse { 0%,100% { transform: scale(1); opacity: .9 } 50% { transform: scale(1.8); opacity: .3 } }
+
+/* ---------- 2. Save the date ---------- */
+.std .script.big { font-size: clamp(58px, 17vw, 84px); margin-top: 4px; }
+.std .married { display: block; margin-top: -10px; padding-left: 30%; }
+.arch {
+  margin: 34px auto 0; width: min(330px, 86%);
+  aspect-ratio: 3 / 4.3; border-radius: 999px 999px 6px 6px; overflow: hidden;
+  outline: 1px solid var(--champagne); outline-offset: 8px;
+}
+.arch img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; }
+.names-th { font-family: var(--f-thai-script); font-size: 34px; margin-top: 34px; font-weight: 700; }
+.names-th .and { font-family: var(--f-script); font-weight: 400; color: var(--mint); margin: 0 10px; }
+.date-row { display: flex; justify-content: center; align-items: center; gap: 16px; margin-top: 16px; font-family: var(--f-serif); }
+.date-row span { padding: 4px 0; border-block: 1px solid var(--champagne); min-width: 82px; font-size: 13px; letter-spacing: .2em; text-transform: uppercase; }
+.date-row b { font-weight: 400; font-size: 46px; line-height: 1; }
+.date-th { margin-top: 10px; font-size: 14px; color: var(--ink-soft); }
+
+/* ---------- 3. Countdown at sunset ---------- */
+.sunset {
+  color: #f7fbfc; padding-block: 0; min-height: 520px;
+  background: var(--night) url("photos/sunset.jpg") center 62% / cover no-repeat;
+  display: grid; align-content: space-between;
+}
+.sunset::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,24,34,.65) 0%, rgba(20,24,34,.1) 38%, rgba(20,24,34,.05) 60%, rgba(20,24,34,.7) 100%); }
+.sunset > * { position: relative; }
+.sunset .top { padding-top: 48px; display: grid; gap: 10px; justify-items: center; }
+.sunset .caps { color: #d9efe7; }
+.rings { width: 64px; height: 40px; color: #bfe6d8; }
+.cd-row { display: flex; justify-content: center; gap: 8px; padding-bottom: 36px; flex-wrap: wrap; }
+.cd { width: 74px; padding: 10px 0 6px; border: 1px solid rgba(243,228,198,.55); backdrop-filter: blur(3px); background: rgba(255,255,255,.06); }
+.cd b { display: block; font-family: var(--f-serif); font-weight: 400; font-size: 30px; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.cd small { font-size: 11px; letter-spacing: .1em; opacity: .85; }
+
+/* ---------- 4. Portrait in oval frame ---------- */
+.portrait .script { font-size: 52px; }
+.oval {
+  position: relative; width: min(300px, 78%); aspect-ratio: 3 / 4; margin: 30px auto 0; max-width: 100%;
+  padding: 14px; border-radius: 50%;
+  background: linear-gradient(145deg, #fbfdfd, #d6e3e8);
+  box-shadow: 0 18px 40px rgba(40,60,70,.18), inset 0 0 0 1px #a9c6d4;
+}
+.oval::after { content: ""; position: absolute; inset: 6px; border-radius: 50%; border: 1px solid rgba(143,179,204,.6); pointer-events: none; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(12px, 4vw, 28px); margin-top: 30px; }
+.pair figure { margin: 0; min-width: 0; display: grid; gap: 14px; justify-items: center; }
+.pair .oval { width: 100%; margin: 0; padding: 9px; }
+.pair figcaption { display: grid; gap: 2px; }
+.pair figcaption b { font-family: var(--f-thai-script); font-weight: 700; font-size: 26px; line-height: 1.3; }
+.oval img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; border-radius: 50%; }
+.honour { max-width: 34ch; margin: 30px auto 0; font-family: var(--f-serif); text-transform: uppercase; letter-spacing: .14em; font-size: 12px; line-height: 2; color: var(--ink-soft); }
+.parents { margin-top: 18px; font-size: 15px; line-height: 2; }
+.parents strong { font-weight: 600; }
+
+/* ---------- 5. Our story ---------- */
+.story { display: grid; gap: 22px; text-align: left; }
+.story .script { font-size: 54px; text-align: center; }
+.story-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: center; }
+.half { aspect-ratio: 1 / 1.25; overflow: hidden; border-radius: 0 999px 999px 0; margin-left: calc(-1 * max(24px, env(safe-area-inset-left, 0px))); max-width: calc(100% + 24px); }
+.half.r { border-radius: 999px 0 0 999px; margin-left: 0; margin-right: calc(-1 * max(24px, env(safe-area-inset-right, 0px))); }
+.half img { width: 100%; height: 100%; object-fit: cover; }
+.story-text { min-width: 0; }
+.story-text p + p { margin-top: 8px; }
+.story-text .en { font-family: var(--f-serif); font-style: italic; font-size: 15px; color: var(--ink-soft); line-height: 1.6; }
+.story-text .th { font-family: var(--f-thai-script); font-size: 19px; line-height: 1.8; }
+
+/* ---------- 6. Timeline ---------- */
+.timeline .script { font-size: 54px; }
+.tl { list-style: none; margin: 30px auto 0; padding: 0; max-width: 360px; position: relative; text-align: left; }
+.tl::before { content: ""; position: absolute; left: 88px; top: 8px; bottom: 8px; width: 1px; background: linear-gradient(180deg, transparent, var(--champagne) 10%, var(--champagne) 90%, transparent); }
+.tl li { display: grid; grid-template-columns: 72px 32px 1fr; align-items: start; padding: 12px 0; }
+.tl time { font-family: var(--f-serif); font-size: 17px; text-align: right; font-variant-numeric: tabular-nums; }
+.tl .pin { width: 11px; height: 11px; border-radius: 50%; background: var(--paper); border: 1px solid var(--champagne); margin: 8px 0 0 11px; position: relative; }
+.tl .pin::after { content: ""; position: absolute; inset: 2px; border-radius: 50%; background: var(--mint); }
+.tl .what { font-weight: 600; font-size: 16px; display: block; }
+.tl .note { font-size: 14px; color: var(--ink-soft); }
+
+/* ---------- 7. Venue & dress code ---------- */
+.venue .script, .dress .script { font-size: 50px; }
+.venue h3 { font-family: var(--f-body); font-weight: 600; font-size: 18px; margin: 18px 0 2px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; margin-top: 18px;
+  font-family: var(--f-serif); text-transform: uppercase; letter-spacing: .2em; font-size: 12px;
+  padding: 13px 26px; color: var(--paper); background: var(--ink); border: 1px solid var(--ink);
+  text-decoration: none; cursor: pointer; transition: background .25s, color .25s;
+}
+.btn:hover { background: transparent; color: var(--ink); }
+.btn.line { background: transparent; color: var(--ink); }
+.btn.line:hover { background: var(--ink); color: var(--paper); }
+.btn:focus-visible, input:focus-visible, select:focus-visible, .g-item:focus-visible { outline: 2px solid var(--champagne); outline-offset: 3px; }
+.dress p.lead { max-width: 32ch; margin: 14px auto 0; font-size: 15px; }
+.swatches { display: flex; justify-content: center; gap: 18px; margin-top: 24px; flex-wrap: wrap; }
+.sw { display: grid; gap: 8px; justify-items: center; font-size: 13px; color: var(--ink-soft); }
+.sw i { width: 54px; height: 54px; border-radius: 50%; display: block; box-shadow: inset 0 -4px 8px rgba(0,0,0,.12), 0 0 0 1px rgba(0,0,0,.06); }
+
+/* ---------- 8. Gallery ---------- */
+.gallery .script { font-size: 50px; }
+.grid { margin-top: 28px; columns: 2; column-gap: 10px; }
+.g-item { break-inside: avoid; margin: 0 0 10px; display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
+.g-item img { width: 100%; filter: saturate(.92); transition: filter .3s, transform .4s; }
+.g-item:hover img { filter: saturate(1.05); transform: scale(1.015); }
+.lightbox { position: fixed; inset: 0; z-index: 50; background: rgba(28,24,20,.92); display: grid; place-items: center; padding: max(16px, env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+.lightbox img { max-height: 86vh; max-width: 100%; box-shadow: 0 20px 60px rgba(0,0,0,.5); }
+.lightbox button { position: absolute; top: calc(14px + env(safe-area-inset-top, 0px)); right: calc(14px + env(safe-area-inset-right, 0px)); background: none; border: 1px solid #d9efe7; color: #d9efe7; width: 40px; height: 40px; font-size: 20px; cursor: pointer; }
+
+/* ---------- 9. RSVP ---------- */
+.rsvp .script { font-size: 50px; }
+form { display: grid; gap: 14px; max-width: 380px; margin: 26px auto 0; text-align: left; }
+label { display: grid; gap: 4px; font-size: 13px; color: var(--ink-soft); }
+input, select {
+  font: inherit; font-size: 16px; color: var(--ink); background: transparent;
+  border: 0; border-bottom: 1px solid var(--champagne); padding: 8px 2px; border-radius: 0; width: 100%;
+}
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.center { text-align: center; }
+.out { max-width: 380px; margin: 20px auto 0; display: grid; gap: 10px; }
+.out pre { margin: 0; white-space: pre-wrap; text-align: left; font-family: var(--f-body); font-size: 15px; padding: 14px; background: #fbfdfd; border: 1px solid var(--linen); }
+
+/* ---------- 10. Farewell ---------- */
+.farewell {
+  color: #f7fbfc; min-height: 560px; display: grid; align-content: end; justify-items: center; padding-bottom: 56px;
+  background: #8a8f99 url("photos/island.jpg") center 70% / cover no-repeat;
+}
+.farewell::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(30,32,40,0) 30%, rgba(30,32,40,.72) 100%); }
+.farewell > * { position: relative; }
+.farewell .caps { color: #d9efe7; }
+.farewell .script { color: #f7fbfc; font-size: clamp(54px, 16vw, 76px); margin-top: 6px; }
+.farewell .btn { background: transparent; color: #f7fbfc; border-color: #d9efe7; }
+.farewell .btn:hover { background: #f7fbfc; color: var(--ink); }
+
+.flourish { width: 120px; height: 20px; margin: 18px auto 0; color: var(--champagne); display: block; }
+
+#petals { position: fixed; inset: 0; pointer-events: none; z-index: 70; width: 100%; height: 100%; }
+
+@media (max-width: 400px) {
+  .story-row { gap: 12px; }
+  .story-text .th { font-size: 17px; }
+  .cd { width: 66px; }
+  .tl::before { left: 76px; }
+  .tl li { grid-template-columns: 60px 32px 1fr; }
+  .two { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .tap .dot { animation: none; }
+  .card-in, .env-flap, .seal { transition: none; }
+  #petals { display: none; }
+}
+</style>
+
+<canvas id="petals" aria-hidden="true"></canvas>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="flourish" viewBox="0 0 120 20"><g fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M2 10h40M78 10h40"/><path d="M60 3c-6 0-10 4-10 7s4 7 10 7 10-4 10-7-4-7-10-7z"/><path d="M42 10c4-4 8-4 8 0M78 10c-4 4-8 4-8 0"/></g></symbol>
+  </defs>
+</svg>
+
+<main class="letter">
+
+  <!-- 1 · Envelope -->
+  <section class="intro" id="top">
+    <p class="caps">Wedding Invitation</p>
+    <p class="script">A Love Letter to Forever</p>
+    <div class="env-wrap">
+      <button class="envelope" id="envelope" type="button" aria-label="เปิดซองการ์ดเชิญ">
+        <span class="env-back"></span>
+        <span class="card-in">
+          <span class="caps">Save the date</span>
+          <span class="script">Chon &amp; Auh</span>
+          <span class="caps" style="letter-spacing:.2em">14 · 01 · 2027</span>
+        </span>
+        <span class="env-front"></span>
+        <span class="env-flap"></span>
+        <span class="seal">C&amp;A</span>
+      </button>
+    </div>
+    <div class="tap"><span class="dot"></span><span class="hint">แตะที่ซองเพื่อเปิดการ์ด</span></div>
+  </section>
+
+  <!-- 2 · Save the date -->
+  <section class="std" id="save-the-date">
+    <p class="caps">Together with their families</p>
+    <h2 class="script big">We're getting<span class="married">married</span></h2>
+    <div class="arch"><img src="photos/studio.jpg" alt="ชลและอัชในชุดแต่งงาน จับมือกันในสตูดิโอ"></div>
+    <p class="names-th">ชล<span class="and">&amp;</span>อัช</p>
+    <div class="date-row"><span>Thursday</span><b>14</b><span>Jan 2027</span></div>
+    <p class="date-th">วันพฤหัสบดีที่ ๑๔ มกราคม พุทธศักราช ๒๕๗๐</p>
+  </section>
+
+  <!-- 3 · Countdown -->
+  <section class="sunset" aria-labelledby="h-cd">
+    <div class="top">
+      <svg class="rings" viewBox="0 0 64 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="24" cy="22" r="14"/><circle cx="40" cy="22" r="14"/></g><path d="M36 4l4-3 4 3-4 3z" fill="currentColor"/></svg>
+      <h2 id="h-cd" class="caps">Countdown to our big day</h2>
+    </div>
+    <div class="cd-row" role="timer" aria-label="นับถอยหลังสู่วันงาน">
+      <div class="cd"><b id="cd-d">--</b><small>วัน</small></div>
+      <div class="cd"><b id="cd-h">--</b><small>ชั่วโมง</small></div>
+      <div class="cd"><b id="cd-m">--</b><small>นาที</small></div>
+      <div class="cd"><b id="cd-s">--</b><small>วินาที</small></div>
+    </div>
+  </section>
+
+  <!-- 4 · Portrait -->
+  <section class="portrait">
+    <h2 class="script">A day to remember</h2>
+    <div class="pair">
+      <figure>
+        <div class="oval"><img src="photos/groom.jpg" alt="เจ้าบ่าวชลในชุดสูทสีกรมท่า" style="object-position:50% 12%"></div>
+        <figcaption><span class="caps">The Groom</span><b>ชล</b></figcaption>
+      </figure>
+      <figure>
+        <div class="oval"><img src="photos/bride.jpg" alt="เจ้าสาวอัชในชุดราตรีซาตินสีงาช้าง"></div>
+        <figcaption><span class="caps">The Bride</span><b>อัช</b></figcaption>
+      </figure>
+    </div>
+    <p class="honour">The honour of your presence is requested at the marriage celebration of</p>
+    <p class="parents">
+      <strong>นายเสกสรรค์ สุดเพียร</strong><br>
+      และ <strong>นางสาวอัชชรา ครองแสงบุญมา</strong>
+    </p>
+    <svg class="flourish" aria-hidden="true"><use href="#flourish"/></svg>
+  </section>
+
+  <!-- 5 · Our story -->
+  <section class="story">
+    <h2 class="script">Our story</h2>
+    <div class="story-row">
+      <div class="half"><img src="photos/hill.jpg" alt="ชลและอัชนั่งพักบนเนินเขายามพระอาทิตย์ตก"></div>
+      <div class="story-text">
+        <p class="en">From the first day we met to this moment we say “Yes”.</p>
+        <p class="th">จากวันแรกที่เจอกัน<br>จนถึงวันที่ตอบตกลง</p>
+      </div>
+    </div>
+    <div class="story-row">
+      <div class="story-text" style="text-align:right">
+        <p class="en">Every sunset, every trip, every step brought us here.</p>
+        <p class="th">ทุกการเดินทาง<br>พาเรามาถึงวันนี้</p>
+      </div>
+      <div class="half r"><img src="photos/camp.jpg" alt="ชลและอัชนั่งเก้าอี้แคมป์ หันหน้ารับแสงเย็น"></div>
+    </div>
+  </section>
+
+  <!-- 6 · Timeline -->
+  <section class="timeline">
+    <h2 class="script">Our timeline</h2>
+    <ol class="tl">
+      <li><time>14:09</time><span class="pin"></span><div><span class="what">แห่ขบวนขันหมาก</span><span class="note">ล้างเท้าเจ้าบ่าว</span></div></li>
+      <li><time>14:29</time><span class="pin"></span><div><span class="what">พิธีเจรจาสู่ขอ</span><span class="note">รับตัวเจ้าสาว แสดงสินสอด โปรยข้าวตอกดอกไม้</span></div></li>
+      <li><time>14:59</time><span class="pin"></span><div><span class="what">พิธีสวมแหวนหมั้น</span></div></li>
+      <li><time>15:29</time><span class="pin"></span><div><span class="what">ไหว้ผู้ใหญ่ · ยกน้ำชา</span></div></li>
+      <li><time>16:09</time><span class="pin"></span><div><span class="what">พิธีหลั่งน้ำพระพุทธมนต์</span><span class="note">และประสาทพร</span></div></li>
+      <li><time>18:00</time><span class="pin"></span><div><span class="what">ร่วมรับประทานอาหาร</span><span class="note">เริ่มเสิร์ฟอาหาร 18:30 น.</span></div></li>
+      <li><time>19:00</time><span class="pin"></span><div><span class="what">พิธีการฉลองมงคลสมรส</span><span class="note">บ่าวสาวขึ้นเวที กล่าวคำอวยพร จุดเทียน ตัดเค้ก โยนช่อดอกไม้</span></div></li>
+      <li><time>20:00</time><span class="pin"></span><div><span class="what">After Party</span></div></li>
+      <li><time>21:30</time><span class="pin"></span><div><span class="what">ถ่ายรูปร่วมกับบ่าวสาว</span><span class="note">บ่าวสาวส่งแขกหน้างาน</span></div></li>
+    </ol>
+  </section>
+
+  <!-- 7 · Venue + dress code -->
+  <section class="venue">
+    <h2 class="script">The venue</h2>
+    <h3>Chaan de Cafe &amp; Wedding</h3>
+    <p class="muted">ถนนรังสิต–นครนายก คลอง 10 ตำบลบึงสนั่น<br>อำเภอธัญบุรี จังหวัดปทุมธานี</p>
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Chaan+Wedding+Venue+Bueng+Sanan" target="_blank" rel="noopener">เปิดแผนที่ Google Maps</a>
+  </section>
+
+  <section class="dress" style="padding-top:0">
+    <h2 class="script">Dress code</h2>
+    <p class="lead">อยากให้ทุกคนแต่งกายโทน <strong>ฟ้า เทา เขียวมิ้นต์ และน้ำตาลช็อกโกแลต</strong> มาร่วมฉลองไปด้วยกัน</p>
+    <div class="swatches">
+      <div class="sw"><i style="background:#a9c9e2"></i>ฟ้า</div>
+      <div class="sw"><i style="background:#a4a7ab"></i>เทา</div>
+      <div class="sw"><i style="background:#b3e0cf"></i>เขียวมิ้นต์</div>
+      <div class="sw"><i style="background:#5b3a29"></i>น้ำตาลช็อก</div>
+    </div>
+  </section>
+
+  <!-- 8 · Gallery -->
+  <section class="gallery">
+    <h2 class="script">Moments</h2>
+    <div class="grid" id="grid">
+      <button class="g-item" type="button"><img src="photos/sunset.jpg" alt="บ่าวสาวยืนบนโขดหินริมทะเลยามพระอาทิตย์ตก"></button>
+      <button class="g-item" type="button"><img src="photos/island.jpg" alt="ชลและอัชนั่งริมทะเลบนเกาะ"></button>
+      <button class="g-item" type="button"><img src="photos/bride.jpg" alt="เจ้าสาวในชุดซาตินกับผ้าคลุมหน้า"></button>
+      <button class="g-item" type="button"><img src="photos/hill.jpg" alt="ชลนอนหนุนตักอัชบนเนินเขา"></button>
+      <button class="g-item" type="button"><img src="photos/groom.jpg" alt="เจ้าบ่าวชลในชุดสูทสีกรมท่า"></button>
+      <button class="g-item" type="button"><img src="photos/studio.jpg" alt="บ่าวสาวจับมือกันในสตูดิโอ"></button>
+      <button class="g-item" type="button"><img src="photos/camp.jpg" alt="ชลและอัชที่ลานแคมป์"></button>
+    </div>
+  </section>
+
+  <!-- 9 · RSVP -->
+  <section class="rsvp">
+    <h2 class="script">Will you join us?</h2>
+    <p class="muted" style="margin-top:10px">ช่วยตอบรับภายในวันที่ 31 ธันวาคม 2569</p>
+    <form id="rsvp">
+      <label for="r-name">ชื่อของคุณ<input id="r-name" name="name" required placeholder="เช่น คุณแพรวา"></label>
+      <div class="two">
+        <label for="r-attend">การเข้าร่วม<select id="r-attend" name="attend"><option>ยินดีไปร่วมงาน</option><option>ขออภัย ไม่สะดวก</option></select></label>
+        <label for="r-count">จำนวน<select id="r-count" name="count"><option>1 ท่าน</option><option>2 ท่าน</option><option>3 ท่าน</option><option>4 ท่าน</option></select></label>
+      </div>
+      <label for="r-wish">คำอวยพร<input id="r-wish" name="wish" placeholder="ขอให้รักกันตลอดไป"></label>
+      <div class="center" style="display:grid;gap:12px;justify-items:center">
+        <a class="btn" id="gf-send" href="https://docs.google.com/forms/d/e/1FAIpQLSeUpyVWXVBvrM7oqSNRI1D5V5n5prYNZ8Khdb2tjMKCxnqbuw/viewform" target="_blank" rel="noopener">ส่งคำตอบรับ</a>
+        <p class="muted" id="gf-note" style="font-size:13px">ระบบจะเปิด Google Form ที่กรอกไว้ให้แล้ว กด "ส่ง" อีกครั้งเพื่อยืนยัน</p>
+        <button class="btn line" type="submit" style="font-size:11px;padding:10px 18px">หรือส่งทางไลน์</button>
+      </div>
+    </form>
+    <div class="out" id="out" hidden>
+      <p class="muted">กด "ส่งทางไลน์" แล้วเลือกแชทของชลหรืออัชได้เลย</p>
+      <pre id="msg"></pre>
+      <div class="center" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+        <a class="btn" id="line-send" href="https://line.me/R/msg/text/" target="_blank" rel="noopener">ส่งทางไลน์</a>
+        <button class="btn line" type="button" id="copy">คัดลอกข้อความ</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 · Farewell -->
+  <section class="farewell">
+    <p class="caps">With love</p>
+    <p class="script">Chon &amp; Auh</p>
+    <p style="margin-top:8px">การมาของทุกคน คือของขวัญที่ล้ำค่าที่สุดของเรา</p>
+    <a class="btn" href="#top" id="back">กลับไปหน้าแรก</a>
+    <p style="margin-top:22px;font-size:11px;opacity:.75">เพลง “Canon in D Major” โดย Kevin MacLeod (incompetech.com) · CC BY 3.0</p>
+  </section>
+</main>
+
+<button class="music" id="music" type="button" aria-label="เปิดเพลง" aria-pressed="false" hidden>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 18.5a3 3 0 1 1-2-2.83V5l12-2v12.5a3 3 0 1 1-2-2.83V6.36L9 7.7z"/></svg>
+</button>
+
+<div class="lightbox" id="lb" hidden><button type="button" id="lb-close" aria-label="ปิดรูป">×</button><img id="lb-img" alt=""></div>
+
+<script>
+(function () {
+  const $ = id => document.getElementById(id);
+
+  // Envelope intro: full-screen, opens on tap, then fades away to reveal the card
+  const env = $("envelope"), intro = $("top"), musicBtn = $("music");
+  document.body.classList.add("locked");
+  let leaving = null;
+  function reveal() {
+    clearTimeout(leaving);
+    intro.classList.add("gone");
+    document.body.classList.remove("locked");
+    window.scrollTo(0, 0);
+    musicBtn.hidden = false;
+  }
+  env.addEventListener("click", () => {
+    music.start();
+    if (env.classList.contains("open")) { reveal(); return; }
+    env.classList.add("open");
+    burst();
+    leaving = setTimeout(reveal, 2300);
+  });
+  $("back").addEventListener("click", e => {
+    e.preventDefault();
+    window.scrollTo(0, 0);
+    env.classList.remove("open");
+    intro.classList.remove("gone");
+    document.body.classList.add("locked");
+  });
+
+  // Music: Canon in D (Kevin MacLeod, CC BY 3.0), starts on the envelope tap
+  const music = (() => {
+    const a = new Audio("music/canon-in-d.mp3");
+    a.loop = true; a.preload = "auto"; a.volume = .75;
+    let on = false;
+    function setUi(p) {
+      musicBtn.classList.toggle("playing", p);
+      musicBtn.setAttribute("aria-pressed", String(p));
+      musicBtn.setAttribute("aria-label", p ? "ปิดเพลง" : "เปิดเพลง");
+    }
+    return {
+      start() {
+        if (on) return;
+        on = true; setUi(true);
+        const p = a.play();
+        if (p && p.catch) p.catch(() => { on = false; setUi(false); });
+      },
+      stop() { on = false; setUi(false); a.pause(); },
+      toggle() { on ? this.stop() : this.start(); }
+    };
+  })();
+  musicBtn.addEventListener("click", () => music.toggle());
+
+  // Countdown
+  const target = new Date("2027-01-14T14:09:00+07:00").getTime();
+  const pad = n => String(n).padStart(2, "0");
+  function tick() {
+    let s = Math.max(0, Math.floor((target - Date.now()) / 1000));
+    const d = Math.floor(s / 86400); s %= 86400;
+    $("cd-d").textContent = d; $("cd-h").textContent = pad(Math.floor(s / 3600));
+    $("cd-m").textContent = pad(Math.floor(s % 3600 / 60)); $("cd-s").textContent = pad(s % 60);
+  }
+  tick(); setInterval(tick, 1000);
+
+  // Gallery lightbox
+  const lb = $("lb"), lbImg = $("lb-img");
+  document.querySelectorAll(".g-item").forEach(b => b.addEventListener("click", () => {
+    const i = b.querySelector("img"); lbImg.src = i.src; lbImg.alt = i.alt; lb.hidden = false; $("lb-close").focus();
+  }));
+  const closeLb = () => { lb.hidden = true; };
+  $("lb-close").addEventListener("click", closeLb);
+  lb.addEventListener("click", e => { if (e.target === lb) closeLb(); });
+  addEventListener("keydown", e => { if (e.key === "Escape") closeLb(); });
+
+  // RSVP → Google Form (pre-filled), answers land in the couple's Google Sheet
+  const GF = "https://docs.google.com/forms/d/e/1FAIpQLSeUpyVWXVBvrM7oqSNRI1D5V5n5prYNZ8Khdb2tjMKCxnqbuw/viewform";
+  function gfUrl() {
+    const going = $("r-attend").value === "ยินดีไปร่วมงาน";
+    const p = new URLSearchParams({ usp: "pp_url" });
+    p.set("entry.224854122", $("r-name").value.trim());
+    p.set("entry.1510558903", $("r-attend").value);
+    if (going) p.set("entry.1880052414", $("r-count").value);
+    if ($("r-wish").value.trim()) p.set("entry.559340591", $("r-wish").value.trim());
+    return GF + "?" + p.toString();
+  }
+  const gfSend = $("gf-send");
+  const syncGf = () => { gfSend.href = gfUrl(); };
+  $("rsvp").addEventListener("input", syncGf);
+  $("rsvp").addEventListener("change", syncGf);
+  gfSend.addEventListener("click", e => {
+    if (!$("r-name").value.trim()) { e.preventDefault(); $("r-name").reportValidity(); $("r-name").focus(); return; }
+    syncGf();
+    $("gf-note").textContent = "เปิด Google Form แล้ว อย่าลืมกด \"ส่ง\" ในหน้านั้นนะ ขอบคุณที่ตอบรับ";
+  });
+
+  $("rsvp").addEventListener("submit", e => {
+    e.preventDefault();
+    const f = new FormData(e.target), going = f.get("attend") === "ยินดีไปร่วมงาน";
+    let t = `ถึง ชล & อัช\n${f.get("name")} ${going ? "ยินดีไปร่วมงาน จำนวน " + f.get("count") : "ขออภัย ไม่สะดวกไปร่วมงาน"}`;
+    if (f.get("wish")) t += `\nคำอวยพร: ${f.get("wish")}`;
+    $("msg").textContent = t; $("out").hidden = false;
+    $("line-send").href = "https://line.me/R/msg/text/?" + encodeURIComponent(t);
+  });
+  $("copy").addEventListener("click", () => {
+    const b = $("copy");
+    navigator.clipboard.writeText($("msg").textContent).then(() => { b.textContent = "คัดลอกแล้ว"; })
+      .catch(() => { const r = document.createRange(); r.selectNodeContents($("msg")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = "เลือกข้อความแล้ว กดคัดลอกได้เลย"; });
+  });
+
+  // Petals: a gentle drift, plus a burst when the envelope opens
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const c = $("petals"), ctx = c.getContext("2d");
+  let W, H, dpr, ps = [];
+  function size() { dpr = Math.min(2, devicePixelRatio || 1); W = c.width = innerWidth * dpr; H = c.height = innerHeight * dpr; }
+  size(); addEventListener("resize", size);
+  const tones = ["255,255,255", "191,228,214", "176,205,226"];
+  function petal(x, y, vy, vx) {
+    return { x, y, vx: vx || 0, vy, r: (3 + Math.random() * 4) * dpr, rot: Math.random() * 6, vr: (Math.random() - .5) * .05, sw: Math.random() * 6, t: tones[Math.random() * 3 | 0], life: 1 };
+  }
+  function burst() {
+    if (reduce) return;
+    const r = env.getBoundingClientRect(), cx = (r.left + r.width / 2) * dpr, cy = (r.top + r.height * .3) * dpr;
+    for (let i = 0; i < 46; i++) { const a = Math.random() * Math.PI * 2, s = (1.5 + Math.random() * 3.5) * dpr; ps.push(petal(cx, cy, Math.sin(a) * s - 2 * dpr, Math.cos(a) * s)); }
+  }
+  if (reduce) return;
+  for (let i = 0; i < 18; i++) ps.push(petal(Math.random() * W, Math.random() * H, (.3 + Math.random() * .4) * dpr));
+  (function frame() {
+    ctx.clearRect(0, 0, W, H);
+    ps.forEach(p => {
+      p.sw += .02; p.rot += p.vr; p.vx *= .985; p.vy += .012 * dpr; if (p.vy > 1.1 * dpr) p.vy = 1.1 * dpr;
+      p.x += p.vx + Math.sin(p.sw) * .4 * dpr; p.y += p.vy;
+      if (p.y > H + 30) { p.y = -20; p.x = Math.random() * W; p.vx = 0; p.vy = (.3 + Math.random() * .4) * dpr; }
+      ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.rot);
+      ctx.fillStyle = `rgba(${p.t},.9)`; ctx.strokeStyle = "rgba(120,160,180,.35)"; ctx.lineWidth = dpr * .6;
+      ctx.beginPath(); ctx.ellipse(0, 0, p.r, p.r * .6, 0, 0, Math.PI * 2); ctx.fill(); ctx.stroke(); ctx.restore();
+    });
+    if (ps.length > 70) ps = ps.filter((p, i) => i < 18 || p.y < H);
+    requestAnimationFrame(frame);
+  })();
+})();
+</script>
+
+</body>
+</html>
